@@ -8,7 +8,7 @@ Two-tier system for supplement documentation:
 ## Key Principles
 
 - **No patient-specific data** in either location (no status, no patient doses, no protocol links)
-- **Intervention files link here** — `patient_file/3_interventions/` files should reference product cards for product details rather than duplicating them
+- **Intervention files link here** — `dossier/3_interventions/` files should reference product cards for product details rather than duplicating them
 - When recommending a new supplement, check if a product card already exists in `research/products/` and a nutrient doc exists in `research/nutrients/`
 
 ## Creating New Files / Updating Files

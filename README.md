@@ -13,7 +13,7 @@ Fork it, drop in your own diagnostic data, and use Claude Code as a systems-leve
 
 ```
 health-dossier/
-├── patient_file/       # The clinical record — your data, assessments, protocols, tracking
+├── dossier/            # The clinical record — your data, assessments, protocols, tracking
 │   ├── 1_data/         # Raw inputs: blood tests, genetics, microbiome, wearables, profile
 │   ├── 2_assessments/  # Interpretation of YOUR data ("what does this mean for me?")
 │   ├── 3_interventions/# Active, past, and proposed protocols
@@ -88,7 +88,7 @@ script any time to pick up new releases.
 
 ### 3. Replace the example data
 
-`patient_file/1_data/` ships with example files (marked `> Example data.` at the
+`dossier/1_data/` ships with example files (marked `> Example data.` at the
 top) so you can see what each file type looks like. **These are not your data.**
 Before you rely on anything the assistant writes, delete or overwrite them.
 
@@ -110,7 +110,7 @@ it keeps files diffable, greppable, and cheap for the assistant to read.
 
 The easiest way to convert them:
 
-1. Drop the PDF into `patient_file/1_data/` (or a temporary folder).
+1. Drop the PDF into `dossier/1_data/` (or a temporary folder).
 2. Ask Claude Code — or any AI that can read PDFs (Claude.ai, ChatGPT, Gemini)
    — to transcribe it into markdown, using the existing example files as the
    format reference.

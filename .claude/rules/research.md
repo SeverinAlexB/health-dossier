@@ -3,7 +3,7 @@
 This folder holds general evidence reviews and literature deep dives — content that
 doesn't interpret the patient's specific data.
 
-## When to use `research/` vs `patient_file/2_assessments/`
+## When to use `research/` vs `dossier/2_assessments/`
 
 - **research/**: "What does the science say about X?" — PubMed reviews, practitioner
   protocol analyses, mechanism deep dives, Reddit experience compilations.
@@ -18,5 +18,5 @@ Put Reddit compilations in a `reddit/` subfolder within the topic.
 
 ## Cross-referencing
 
-Assessment files in `patient_file/2_assessments/` should link to their supporting research in
+Assessment files in `dossier/2_assessments/` should link to their supporting research in
 `research/` where applicable. Research files should note patient relevance where it exists.

@@ -7,7 +7,7 @@ description: Create nutrient reference docs and product cards for supplements. N
 
 Two-file system: **nutrient docs** (science) in `research/nutrients/` and **product cards** (brand/price) in `research/products/`.
 
-No patient-specific data in either file type. The patient's relationship to supplements lives in `patient_file/3_interventions/`.
+No patient-specific data in either file type. The patient's relationship to supplements lives in `dossier/3_interventions/`.
 
 ## Input
 

@@ -4,14 +4,14 @@ This repository represents a personal health optimization system with patient da
 
 ## Folder Structure
 
-This patient's health data is organized in a numbered clinical pipeline located in **patient_file/**:
+This patient's health data is organized in a numbered clinical pipeline located in **dossier/**:
 
-- **patient_file/1_data/**: Raw diagnostic data (blood tests, genetic, microbiome, patient profile, etc.)
+- **dossier/1_data/**: Raw diagnostic data (blood tests, genetic, microbiome, patient profile, etc.)
   - Start with patient_profile.md for demographics and baseline data
   - This folder is readonly for you. DO NOT modify it.
-- **patient_file/2_assessments/**: Clinical interpretations and analysis of diagnostic data (what does this mean?)
-- **patient_file/3_interventions/**: Treatment protocols (current, past, proposed) (what do we do about it?)
-- **patient_file/4_monitoring/**: Daily metrics, tracking, and outcomes (is it working?)
+- **dossier/2_assessments/**: Clinical interpretations and analysis of diagnostic data (what does this mean?)
+- **dossier/3_interventions/**: Treatment protocols (current, past, proposed) (what do we do about it?)
+- **dossier/4_monitoring/**: Daily metrics, tracking, and outcomes (is it working?)
 
 Additionally, general research is stored outside the patient file:
 
