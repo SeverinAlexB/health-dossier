@@ -13,7 +13,7 @@ mortality, disease incidence, longevity, performance).
 Not elite:
 - Practitioner opinion (Attia, Patrick, functional-medicine consensus) without
   an outcome study behind it
-- Reddit/Twitter biohacker consensus
+- Reddit biohacker consensus
 - "Feels better at" anecdotes
 
 If the tightest available source is practitioner opinion, the marker does

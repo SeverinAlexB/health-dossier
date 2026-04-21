@@ -18,7 +18,7 @@ Exempt: readouts of the patient's own data (e.g., "your hair test showed aluminu
 ## How to verify
 
 Check the claim against one of:
-- **External sources** (per `.claude/rules/research-hierarchy.md`): PubMed, MDPI, iHerb, Migros, FoodData Central, Reddit, Twitter
+- **External sources** (per `.claude/rules/research-hierarchy.md`): PubMed, MDPI, iHerb, Migros, FoodData Central, Reddit
 - **Internal sources**: patient files in `patient_file/`, existing docs in `research/`
 
 Then cite the source inline. In files, use the reference-style links from `.claude/rules/references.md`. In chat, an inline `(PMID 29914147)`, `(iHerb 18791)`, or file path is enough.
