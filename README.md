@@ -46,7 +46,9 @@ Standing instructions the assistant follows on every task:
 - **`verify.md`** — every verifiable claim needs a source; no training-data guessing
 - **`research-hierarchy.md`** — PubMed > practitioner protocols > anecdotal reports
 - **`references.md`** — citation format for PMIDs, iHerb SKUs, FDC IDs, Migros IDs, Reddit threads
+- **`elite-reference-ranges.md`** — flag values in the gap between "lab normal" and outcome-study optimal, citation required
 - **`read-before-write.md`** — answer questions without editing files unless asked
+- **`check-current-state.md`** — read the relevant patient files and profile before recommending anything
 - **`supplements.md`** / **`supplement-facts.md`** — safety, cofactors, two-tier nutrient/product docs
 - **`iherb.md`** / **`migros.md`** / **`fooddata.md`** — preferred supplement/grocery sources
 - **`no-prescription-meds.md`** — prefer OTC; flag prescriptions but don't lean on them
@@ -57,18 +59,18 @@ Standing instructions the assistant follows on every task:
 
 ### Skills (`.claude/skills/`)
 
+Checked in:
+
 - **`supplement-facts`** — generate nutrient reference docs and product cards in the expected two-tier format
 - **`daily-schedule-pdf`** — render a daily supplement/routine schedule as a printable A4 landscape card
 
-### External data integrations
+Fetched by `install.sh` — one per CLI integration, gitignored so they can be re-fetched on demand. Each pairs a command-line tool with a SKILL.md that teaches Claude how to use it, so the assistant pulls live data instead of hallucinating it:
 
-The assistant uses command-line tools (configured separately) to pull live data instead of hallucinating it:
-
-- **PubMed** — literature search and citation
-- **iHerb** — supplement availability, pricing, formulation
-- **Migros** — Swiss grocery availability and pricing
-- **FoodData Central (USDA)** — nutrient profiles for foods
-- **Reddit** — practitioner protocols and experience reports
+- **`pubmed-agent`** — PubMed literature search, abstracts, citations
+- **`fooddata-agent`** — USDA FoodData Central nutrient profiles
+- **`migros-agent`** — Swiss grocery availability and pricing
+- **`iherb-agent`** — supplement availability, pricing, formulation
+- **`reddit-agent`** — practitioner protocols and experience reports
 
 ## Using this template
 
