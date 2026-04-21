@@ -1,4 +1,4 @@
-# health-bot-template
+# health-dossier
 
 A template for keeping a personal health record that an AI assistant (Claude Code) can read, reason over, and update like a careful clinician would.
 
@@ -12,7 +12,7 @@ Fork it, drop in your own diagnostic data, and use Claude Code as a systems-leve
 ## Repository Structure
 
 ```
-health-bot-template/
+health-dossier/
 ├── patient_file/       # The clinical record — your data, assessments, protocols, tracking
 │   ├── 1_data/         # Raw inputs: blood tests, genetics, microbiome, wearables, profile
 │   ├── 2_assessments/  # Interpretation of YOUR data ("what does this mean for me?")
@@ -68,7 +68,7 @@ The assistant uses command-line tools (configured separately) to pull live data 
 - **iHerb** — supplement availability, pricing, formulation
 - **Migros** — Swiss grocery availability and pricing
 - **FoodData Central (USDA)** — nutrient profiles for foods
-- **Reddit / Twitter** — practitioner protocols and experience reports
+- **Reddit** — practitioner protocols and experience reports
 
 ## Using this template
 
@@ -76,7 +76,20 @@ The assistant uses command-line tools (configured separately) to pull live data 
 
 Get your own copy — this repo is meant to be forked, not contributed back to.
 
-### 2. Replace the example data
+### 2. Install the CLI tools
+
+The assistant relies on five CLIs (PubMed, FoodData Central, Migros, iHerb,
+Reddit) to pull live data instead of hallucinating it. Install them all with:
+
+```bash
+./install.sh
+```
+
+This downloads the right binary for your platform (macOS arm64/amd64, Linux
+amd64, Windows amd64) and places each one in `/usr/local/bin`. Re-run the
+script any time to pick up new releases.
+
+### 3. Replace the example data
 
 `patient_file/1_data/` ships with example files (marked `> Example data.` at the
 top) so you can see what each file type looks like. **These are not your data.**
@@ -92,7 +105,7 @@ Typical things that live in `1_data/`:
 - **Hair / stool / urine / microbiome tests** — one file per test
 - **Genetic data** — raw exports plus any screening analyses
 
-### 3. Convert your PDFs to markdown
+### 4. Convert your PDFs to markdown
 
 Lab reports, genetic test results, and clinic summaries almost always arrive as
 PDFs. The patient record works best when every data source is plain markdown —
@@ -107,7 +120,7 @@ The easiest way to convert them:
 3. Review the output, fix any OCR mistakes, save as `.md`, and delete the PDF
    if you don't need it in the repo.
 
-### 4. Start using it
+### 5. Start using it
 
 Open the repo in Claude Code and start asking questions: *"what does my latest
 blood test suggest?"*, *"what's missing from my supplement stack given these
@@ -115,7 +128,7 @@ results?"*, *"write an assessment of my microbiome report."* Review what it
 writes. Correct it when it's wrong — the corrections stick, because the record
 is the source of truth.
 
-### 5. Let the record grow
+### 6. Let the record grow
 
 Treat the repo as a long-lived clinical file, not a scratchpad. New test? Add
 it to `1_data/`. New protocol? `3_interventions/`. Daily tracking? `4_monitoring/`.

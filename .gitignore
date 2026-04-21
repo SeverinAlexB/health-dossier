@@ -1,2 +1,9 @@
 .python/*
 .DS_Store
+
+# CLI skills fetched by install.sh (re-fetched on each run)
+.claude/skills/pubmed-agent/
+.claude/skills/fooddata-agent/
+.claude/skills/migros-agent/
+.claude/skills/iherb-agent/
+.claude/skills/reddit-agent/
