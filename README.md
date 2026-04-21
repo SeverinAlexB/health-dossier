@@ -41,21 +41,16 @@ This is what makes the repo more than a folder of markdown.
 
 ### Rules (`.claude/rules/`)
 
-Standing instructions the assistant follows on every task:
+Standing instructions the assistant follows on every task. The most load-bearing ones:
 
 - **`verify.md`** — every verifiable claim needs a source; no training-data guessing
 - **`research-hierarchy.md`** — PubMed > practitioner protocols > anecdotal reports
 - **`references.md`** — citation format for PMIDs, iHerb SKUs, FDC IDs, Migros IDs, Reddit threads
 - **`elite-reference-ranges.md`** — flag values in the gap between "lab normal" and outcome-study optimal, citation required
-- **`read-before-write.md`** — answer questions without editing files unless asked
-- **`check-current-state.md`** — read the relevant patient files and profile before recommending anything
 - **`supplements.md`** / **`supplement-facts.md`** — safety, cofactors, two-tier nutrient/product docs
-- **`iherb.md`** / **`migros.md`** / **`fooddata.md`** — preferred supplement/grocery sources
 - **`no-prescription-meds.md`** — prefer OTC; flag prescriptions but don't lean on them
-- **`monitoring.md`** — when and how to track outcomes
-- **`archiving.md`** — how to retire superseded protocols
-- **`research.md`** — when to write to `research/` vs `patient_file/2_assessments/`
-- **`long_lived_docs.md`** / **`file_size.md`** — write for the next session, split files > 3000 words
+
+The rest cover procedural behavior (when to edit files, how to archive, folder conventions, file-size limits). Browse `.claude/rules/` for the full list.
 
 ### Skills (`.claude/skills/`)
 
