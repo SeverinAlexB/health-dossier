@@ -1,0 +1,1 @@
+Use the migros-cli in case you want to lookup the availability of regular foods. It's where I buy groceries. It's a Swiss store that you can search products.

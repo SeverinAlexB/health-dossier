@@ -1,0 +1,1 @@
+I do not have the ability to order prescription medications. So try to stay with over-the-counter supplements/meds. Still mention if prescription medications are necessary so I can consider them but at the end, getting them is way higher effort than getting over-the-counter stuff. So try to avoid them if possible.
